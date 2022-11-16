@@ -29,8 +29,13 @@ public class Board {
 	public void setColumns(int columns) {
 		this.columns = columns;
 	}
-	
-	
-	
+	// criando métodos para retornar as peças e passando parâmetros de linhas e colunas sem ser o da variavel
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+	// sobrecarga do método piece 
+	public Piece piece(Position position) {
+		return pieces[position.getColumn()][position.getRow()];
+	}
 	
 }
