@@ -5,7 +5,7 @@ import boardgame.Piece;
 
 // peças de xadrez
 // como tem um construtor na classe Piece terá que fazer um construtor para essa tambem
-public class ChessPiece extends Piece{
+public abstract class ChessPiece extends Piece{
 	
 	private Color color;
 
